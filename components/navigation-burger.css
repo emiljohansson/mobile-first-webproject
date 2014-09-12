@@ -1,0 +1,66 @@
+.hide {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+#toggle-box:checked ~ .click-area {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+}
+.toggle-container {
+    position: relative;
+    width: 22px;
+    height: 18px;
+    padding: 1px;
+    -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+}
+.toggle-container .bar {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: #2D2C2C;
+    top: 0;
+    right: 0;
+}
+.toggle-container .top,
+.toggle-container .bottom {
+    -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+}
+.toggle-container .middle {
+    top: 7px;
+}
+.toggle-container .bottom {
+    top: 14px;
+}
+#toggle-box:checked ~ .toggle-container {
+    -webkit-transform: rotate(180deg) translate(0, 4px) scale(0.7);
+        -ms-transform: rotate(180deg) translate(0, 4px) scale(0.7);
+            transform: rotate(180deg) translate(0, 4px) scale(0.7);
+    -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+}
+#toggle-box:checked ~ .toggle-container .top {
+    top: 2px;
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
+}
+#toggle-box:checked ~ .toggle-container .bottom {
+    top: 12px;
+    -webkit-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+}
+#toggle-box:checked ~ .toggle-container .top, #toggle-box:checked ~ .toggle-container .bottom {
+    width: 17px;
+    margin-right: -3px;
+    -webkit-transition: 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
+}

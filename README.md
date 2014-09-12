@@ -1,4 +1,3 @@
-mobile-first-webproject
-=======================
+#mobile-first-webproject
 
-Mobile first test project.
+Mobile first playground and boilerplate project.

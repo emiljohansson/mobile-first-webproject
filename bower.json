@@ -1,0 +1,25 @@
+{
+  "name": "mobile-first-webproject",
+  "version": "0.0.0",
+  "authors": [
+    "Emil Johansson <emiljohansson.se@gmail.com>"
+  ],
+  "description": "A base for developing mobile suited web applications",
+  "main": "index.js",
+  "keywords": [
+    "mobile",
+    "web"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "less": "~1.7.5",
+    "polymer": "Polymer/polymer#~0.4.0"
+  }
+}

@@ -1,0 +1,30 @@
+<!-- Import Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="navigation-burger">
+
+    <template>
+        <link rel="stylesheet" href="navigation-burger.css">
+
+        <input id="toggle-box" type="checkbox" class="hide" checked="{{isToggled}}">
+        <div class="toggle-container" on-click={{toggle}}>
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
+    </template>
+
+    <script>
+        'use strict';
+
+        Polymer('navigation-burger', {
+            isToggled: false,
+
+            toggle: function() {
+                this.isToggled = !this.isToggled;
+            }
+        });
+    </script>
+
+</polymer-element>

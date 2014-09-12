@@ -1,0 +1,27 @@
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+h1,
+h2 {
+  font-weight: 300;
+}
+h3,
+a {
+  font-weight: normal;
+}
+a {
+  color: #333333;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a:active {
+  font-weight: 300;
+  color: #262626;
+}
+.hide {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}

@@ -1,0 +1,72 @@
+navigation-burger {
+    .click-area {
+    background: #F00;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    }
+    #toggleBox:checked ~ .click-area {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    }
+    .toggle-container {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 20px;
+    height: 18px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    padding: 1px;
+    }
+    .toggle-container .bar {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: #2D2C2C;
+    top: 0;
+    right: 0;
+    }
+    .toggle-container .top,
+    .toggle-container .bottom {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    }
+    .toggle-container .middle {
+    top: 7px;
+    }
+    .toggle-container .bottom {
+    top: 14px;
+    }
+    #toggleBox:checked ~ .toggle-container {
+    -webkit-transform: rotate(180deg) translate(0, 4px);
+    -ms-transform: rotate(180deg) translate(0, 4px);
+    transform: rotate(180deg) translate(0, 4px);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    }
+    #toggleBox:checked ~ .toggle-container .top {
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    top: 2px;
+    }
+    #toggleBox:checked ~ .toggle-container .bottom {
+    -webkit-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    top: 12px;
+    }
+    #toggleBox:checked ~ .toggle-container .top,
+    #toggleBox:checked ~ .toggle-container .bottom {
+    width: 17px;
+    margin-right: -3px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    }
+}
